@@ -1,0 +1,482 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Header */
+.header {
+  background-color: #E0F7FA;
+  padding: 20px 0;
+}
+
+.header h1 {
+  color: #006064;
+}
+
+.header nav a {
+  color: #006064;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url("./images/hero002.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero .cta-button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1.5rem;
+    background-color: #F05E23;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  /* Responsive design for mobile devices */
+  @media screen and (max-width: 768px) {
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero h2 {
+      font-size: 1.25rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .hero .cta-button {
+      font-size: 1rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+
+/* Other sections */
+.section {
+  padding: 50px 0;
+}
+
+.section h2 {
+  color: #006064;
+}
+
+.section p {
+  color: #333;
+}
+
+/* Footer */
+.footer {
+  background-color: #E0F7FA;
+  padding: 20px 0;
+}
+
+.footer p {
+  color: #006064;
+}
+
+
+/* features */
+.features-section {
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature-item {
+    flex-basis: 30%;
+    margin-bottom: 30px;
+  }
+  
+  /* .feature-item img {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+  }
+   */
+  .feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-item p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .feature-item {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .feature-icon {
+    width: 160px;
+    height: 160px;
+    margin-bottom: 15px;
+  }
+
+
+/* testimonials */
+#testimonials {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .testimonials-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .arrow-btn {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .testimonial-card {
+    max-width: 300px;
+    margin: 0 20px;
+  }
+  
+  .testimonial-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .testimonial-card blockquote {
+    font-style: italic;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+/* benefits */
+#benefits {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+  }
+  
+  .benefits-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+  
+  .benefit-item {
+    flex-basis: calc(33% - 20px);
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .benefit-item h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .benefit-item p {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .benefit-item img {
+    max-width: 50%;
+    margin-bottom: 15px;
+  }
+  
+  @media (max-width: 768px) {
+    .benefit-item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .benefit-item {
+      flex-basis: 100%;
+    }
+  }
+  
+/* tutorial */
+/* チュートリアル・デモセクション */
+.tutorial-demo {
+    padding: 60px 0;
+    background-color: #f5f5f5;
+    text-align: center;
+  }
+  
+  .tutorial-demo h2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .tutorial-demo .step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .tutorial-demo .step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .tutorial-demo .step::before {
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    left: -30px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+  } */
+  
+  .tutorial-demo .step h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .tutorial-demo .step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+
+/* cta */
+  .cta-section {
+    background-color: #f5f5f5;
+    padding: 60px 0;
+    text-align: center;
+  }
+  
+  .cta-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cta-subtitle {
+    font-size: 24px;
+    color: #666;
+    margin: 10px 0;
+  }
+  
+  .cta-description {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  .cta-form {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-form input {
+    width: 300px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .cta-button {
+    height: 40px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  .cta-button:hover {
+    background-color: #555;
+  }
+  
+
+
+
+  /* フッターセクション */
+footer {
+    background-color: #f5f5f5;
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .footer-links li {
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+
+
+  /* モーダル全般 */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  /* 利用規約およびプライバシーポリシーモーダル内の要素 */
+  .modal h4 {
+    margin-bottom: 15px;
+  }
+  
+  .modal p {
+    margin-bottom: 15px;
+  }
+  
+  .modal button {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 2px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .modal button:hover {
+    background-color: #ddd;
+  }
+  
+/* 追加するCSS */
+body.modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
